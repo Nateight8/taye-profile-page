@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-[#dee9e9] text-[#005257];
+  }
+
+  h1 {
+    @apply font-custom_heading;
+  }
+
+  h2 {
+    @apply font-custom_heading;
+  }
+
+  .navbar {
+    @apply flex justify-center items-center bg-[#dee9e9] w-full h-[10vh] px-1 md:px-0 sticky z-50 top-0 left-0;
+  }
+
+  .navbar_active {
+    @apply bg-[#005257] text-[#dee9e9];
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "amiri-bolds";
+    src: url("../public/fonts/Amiri-Bold.ttf") format("tff");
+  }
+
+  @font-face {
+    font-family: "amiri-bolds";
+    src: url("../public/fonts/Satoshi-regular.otf") format("otf");
+  }
+}
