@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -67,7 +68,7 @@ export default function App() {
         className=" h-[80%] lg:h-80  w-full md:w-[570px]  "
       >
         {data.map(({ certification, year, description }) => (
-          <SwiperSlide>
+          <SwiperSlide key={uuidv4()}>
             <div className="mx-6  my-8">
               <h3 className=" text-2xl capitalize mb-1">{certification}</h3>
               <p className=" text-base mb-9 opacity-80">Year: {year}</p>

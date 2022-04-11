@@ -10,6 +10,7 @@ function Hero() {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
+        alt=""
       />
 
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-transparent to-[#001011]" />

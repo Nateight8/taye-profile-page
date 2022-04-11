@@ -7,13 +7,7 @@ const AboutMe = () => {
     <div className="h-screen relative  p-3 md:p-20 ">
       <div className=" flex flex-col md:flex-row justify-center md:items-center md:h-[80vh] md:space-x-12">
         <div className="img  lg:block hidden ">
-          <Image
-            src={img}
-            width={450}
-            height={571}
-            objectFit="cover"
-            className=""
-          />
+          <Image src={img} width={450} height={571} objectFit="cover" alt="" />
         </div>
         <div className="about-me p-2 my-28 md:p-6  w-full lg:w-[460px]   flex flex-col justify-center  items-start">
           <h2 className=" text-6xl   md:text-7xl mb-6 text-left font-bold">
